@@ -28,8 +28,8 @@
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
-				if ( !w.document ) {
-					throw new Error( "jQuery requires a window with a best document" );
+				if ( !w.document ) {if(1){
+					throw new Error( "jQuery requires a window with a best document" );}
 				}
 				return factory( w );
 			};
